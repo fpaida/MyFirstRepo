@@ -1,2 +1,2 @@
-# MyFirstRepo
-Learning Tutorial
+## MyFirstRepo
+This a learning Tutorial for my repo.
