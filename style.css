@@ -1,0 +1,146 @@
+/* =====================================
+   CMPS262 - Module 1 Homepage
+   Fabrice Paida
+===================================== */
+
+/* ---------- Global Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Body ---------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #f8fbff, #dbe9f6);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background: linear-gradient(135deg, #003366, #00509e);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* Welcome Message */
+
+.welcome {
+    font-size: 1rem;
+    font-style: italic;
+    color: #e8f4ff;
+    margin-top: 15px;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+section h2 {
+    color: #003366;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00509e;
+    padding-bottom: 8px;
+}
+
+/* ---------- Profile Picture ---------- */
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00509e;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.20);
+}
+
+/* ---------- Paragraphs ---------- */
+
+p {
+    margin-bottom: 15px;
+}
+
+/* ---------- Lists ---------- */
+
+ul {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ---------- Links ---------- */
+
+a {
+    color: #00509e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+}
