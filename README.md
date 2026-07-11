@@ -1,20 +1,22 @@
-# CMPS262 - Module 1
+# CMPS262 – Advanced Programming
 
-## Professional Homepage
+## Module 1 – Professional Homepage
 
-This project was created for **CMPS262 – Advanced Programming** at **Point Park University**.
+**Student:** Fabrice Paida
 
-### Student
+**University:** Point Park University
 
-**Fabrice Paida**
+### Overview
 
-### Course
+This repository contains the first version of my professional homepage created for **CMPS262 – Advanced Programming**.
 
-CMPS262 – Advanced Programming
+The homepage introduces:
 
-### Description
-
-This project contains the first version of my professional homepage developed using HTML and CSS.
+- About Me
+- Professional Photo
+- Interests
+- Summer 2026 Course
+- Contact Information
 
 ### Technologies Used
 
