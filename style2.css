@@ -1,0 +1,287 @@
+/* =====================================
+   CMPS262 - Module 2
+   Fabrice Paida
+===================================== */
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- Body ---------- */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef3f9;
+    color:#333;
+    line-height:1.6;
+
+}
+
+/* ---------- Header ---------- */
+
+.header{
+
+    background:linear-gradient(135deg,#003366,#00509e);
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.header h1{
+
+    font-size:2.8rem;
+
+}
+
+.header h3{
+
+    margin-top:10px;
+
+}
+
+.header p{
+
+    margin-top:8px;
+
+}
+
+/* ---------- Main Layout ---------- */
+
+.container{
+
+    display:flex;
+
+    max-width:1400px;
+
+    margin:30px auto;
+
+}
+
+/* ---------- Navigation ---------- */
+
+.navigation{
+
+    width:230px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    margin-right:20px;
+
+    height:fit-content;
+
+    position:sticky;
+
+    top:20px;
+
+}
+
+.navigation h2{
+
+    color:#003366;
+
+    margin-bottom:20px;
+
+}
+
+.navigation a{
+
+    display:block;
+
+    padding:12px;
+
+    margin-bottom:10px;
+
+    background:#00509e;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:6px;
+
+    transition:.3s;
+
+}
+
+.navigation a:hover{
+
+    background:#ff9900;
+
+}
+
+/* ---------- Content ---------- */
+
+.content{
+
+    flex:1;
+
+}
+
+/* ---------- Cards ---------- */
+
+.card{
+
+    background:white;
+
+    margin-bottom:25px;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+.card h2{
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+    border-bottom:2px solid #00509e;
+
+    padding-bottom:8px;
+
+}
+
+/* ---------- Profile Picture ---------- */
+
+.profile-photo{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #00509e;
+
+    display:block;
+
+    margin:20px auto;
+
+}
+
+/* ---------- Paragraph ---------- */
+
+.card p{
+
+    margin-bottom:15px;
+
+    text-align:justify;
+
+}
+
+/* ---------- Lists ---------- */
+
+ul{
+
+    margin-left:30px;
+
+}
+
+li{
+
+    margin-bottom:10px;
+
+}
+
+/* ---------- Table ---------- */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:15px;
+
+}
+
+th{
+
+    background:#003366;
+
+    color:white;
+
+    padding:12px;
+
+}
+
+td{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+}
+
+tr:nth-child(even){
+
+    background:#f4f7fb;
+
+}
+
+/* ---------- Footer ---------- */
+
+.footer{
+
+    background:#003366;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:30px;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:900px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.navigation{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+    position:relative;
+
+}
+
+.profile-photo{
+
+    width:170px;
+
+    height:170px;
+
+}
+
+}
