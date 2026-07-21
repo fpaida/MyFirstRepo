@@ -1,70 +1,76 @@
 $(document).ready(function () {
 
-    // Home Button
+    // ==========================
+    // HOME
+    // ==========================
     $("#homeBtn").click(function () {
 
-        $("#homePage").show();
-        $("#aboutPage").hide();
-        $("#projectsPage").hide();
-        $("#settingsPage").hide();
+        $("section").hide();
+        $("#homePage").fadeIn(600);
 
     });
 
-    // About Button
+    // ==========================
+    // ABOUT
+    // ==========================
     $("#aboutBtn").click(function () {
 
-        $("#homePage").hide();
-        $("#aboutPage").show();
-        $("#projectsPage").hide();
-        $("#settingsPage").hide();
+        $("section").hide();
+        $("#aboutPage").fadeIn(600);
 
     });
 
-    // Projects Button
+    // ==========================
+    // PROJECTS
+    // ==========================
     $("#projectsBtn").click(function () {
 
-        $("#homePage").hide();
-        $("#aboutPage").hide();
-        $("#projectsPage").show();
-        $("#settingsPage").hide();
+        $("section").hide();
+        $("#projectsPage").fadeIn(600);
 
     });
 
-    // Settings Button
+    // ==========================
+    // SETTINGS
+    // ==========================
     $("#settingsBtn").click(function () {
 
-        $("#homePage").hide();
-        $("#aboutPage").hide();
-        $("#projectsPage").hide();
-        $("#settingsPage").show();
+        $("section").hide();
+        $("#settingsPage").fadeIn(600);
 
     });
 
-    // Change Font
-$("#fontSelect").change(function () {
+    // ==========================
+    // CHANGE FONT
+    // ==========================
+    $("#fontSelect").change(function () {
 
-    $("body").css(
-        "font-family",
-        $(this).val()
-    );
+        $("body").css(
+            "font-family",
+            $(this).val()
+        );
 
-});
+    });
 
-// Change Text Color
-$("#colorSelect").change(function () {
+    // ==========================
+    // CHANGE TEXT COLOR
+    // ==========================
+    $("#colorSelect").change(function () {
 
-    $("body").css(
-        "color",
-        $(this).val()
-    );
+        $("body").css(
+            "color",
+            $(this).val()
+        );
 
-});
+    });
 
-// Dark Mode
-$("#darkModeBtn").click(function () {
+    // ==========================
+    // DARK MODE
+    // ==========================
+    $("#darkModeBtn").click(function () {
 
-    $("body").toggleClass("darkMode");
+        $("body").toggleClass("darkMode");
 
-});
+    });
 
 });
