@@ -10,6 +10,8 @@
     box-sizing: border-box;
 }
 
+/* Body */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f9;
@@ -52,6 +54,7 @@ nav button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 6px;
+    transition: 0.3s;
 }
 
 nav button:hover {
@@ -75,6 +78,12 @@ main img {
 
 main p {
     font-size: 18px;
+    margin: 15px 0;
+}
+
+main ul {
+    list-style-position: inside;
+    font-size: 18px;
 }
 
 /* Footer */
@@ -85,4 +94,41 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+/* ===========================
+   Dark Mode
+=========================== */
+
+.darkMode {
+    background: #222;
+    color: white;
+}
+
+.darkMode header {
+    background: #000;
+}
+
+.darkMode nav {
+    background: #111;
+}
+
+.darkMode footer {
+    background: #000;
+}
+
+.darkMode section {
+    background: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.darkMode nav button {
+    background: #555;
+    color: white;
+}
+
+.darkMode nav button:hover {
+    background: #777;
 }
