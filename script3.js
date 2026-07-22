@@ -1,49 +1,51 @@
 $(document).ready(function () {
 
-    // ==========================
-    // HOME
-    // ==========================
-    $("#homeBtn").click(function () {
+    function showPage(pageId, buttonId){
 
-        $("section").hide();
-        $("#homePage").fadeIn(600);
+        $("#homePage").hide();
+        $("#aboutPage").hide();
+        $("#projectsPage").hide();
+        $("#settingsPage").hide();
 
-    });
+        $(pageId).fadeIn(300);
 
-    // ==========================
-    // ABOUT
-    // ==========================
-    $("#aboutBtn").click(function () {
+        $("nav button").removeClass("active");
 
-        $("section").hide();
-        $("#aboutPage").fadeIn(600);
+        $(buttonId).addClass("active");
 
-    });
+    }
 
-    // ==========================
-    // PROJECTS
-    // ==========================
-    $("#projectsBtn").click(function () {
+    // Home
+    $("#homeBtn").click(function(){
 
-        $("section").hide();
-        $("#projectsPage").fadeIn(600);
+        showPage("#homePage","#homeBtn");
 
     });
 
-    // ==========================
-    // SETTINGS
-    // ==========================
-    $("#settingsBtn").click(function () {
+    // About
+    $("#aboutBtn").click(function(){
 
-        $("section").hide();
-        $("#settingsPage").fadeIn(600);
+        showPage("#aboutPage","#aboutBtn");
 
     });
 
-    // ==========================
-    // CHANGE FONT
-    // ==========================
-    $("#fontSelect").change(function () {
+    // Projects
+    $("#projectsBtn").click(function(){
+
+        showPage("#projectsPage","#projectsBtn");
+
+    });
+
+    // Settings
+    $("#settingsBtn").click(function(){
+
+        showPage("#settingsPage","#settingsBtn");
+
+    });
+
+    // Change Font
+
+    $("#fontSelect").change(function(){
 
         $("body").css(
             "font-family",
@@ -52,10 +54,9 @@ $(document).ready(function () {
 
     });
 
-    // ==========================
-    // CHANGE TEXT COLOR
-    // ==========================
-    $("#colorSelect").change(function () {
+    // Change Text Color
+
+    $("#colorSelect").change(function(){
 
         $("body").css(
             "color",
@@ -64,10 +65,9 @@ $(document).ready(function () {
 
     });
 
-    // ==========================
-    // DARK MODE
-    // ==========================
-    $("#darkModeBtn").click(function () {
+    // Dark Mode
+
+    $("#darkModeBtn").click(function(){
 
         $("body").toggleClass("darkMode");
 

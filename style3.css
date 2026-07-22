@@ -264,3 +264,15 @@ footer{
     background:#666;
 
 }
+
+/* ===========================
+   Active Navigation Button
+=========================== */
+
+nav button.active{
+
+    background:#ffd54f;
+    color:#003366;
+    font-weight:bold;
+
+}
