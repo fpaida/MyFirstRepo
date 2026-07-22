@@ -13,13 +13,15 @@
 
 <body>
 
-    <!-- Header -->
+    <!-- ================= HEADER ================= -->
+
     <header>
         <h1>Fabrice Paida</h1>
         <p>Networking | Cybersecurity | Data Centers</p>
     </header>
 
-    <!-- Navigation -->
+    <!-- ================= NAVIGATION ================= -->
+
     <nav id="menu">
         <button id="homeBtn">Home</button>
         <button id="aboutBtn">About</button>
@@ -27,109 +29,121 @@
         <button id="settingsBtn">Settings</button>
     </nav>
 
-    <!-- Main Content -->
-   <main>
+    <!-- ================= MAIN ================= -->
 
-    <!-- HOME -->
-    <section id="homePage">
+    <main>
 
-        <h2>Welcome</h2>
+        <!-- HOME -->
 
-        <img src="images/profile.jpg"
-             alt="Fabrice Paida">
+        <section id="homePage">
 
-        <p>
-             Hello! My name is <strong>Fabrice Paida</strong>. I am currently pursuing
-             a Bachelor's degree in Applied Computer Science with a concentration in
-             Networking and Security at Point Park University. I specialize in
-             networking, cybersecurity, Linux, cloud technologies, and data center
-             operations. This homepage demonstrates the HTML, CSS, and jQuery
-             techniques learned in CMPS262 while showcasing some of my professional
-             projects and technical skills.
-      </p>
+            <h2>Welcome</h2>
 
-    </section>
+            <img src="images/profile.jpg" alt="Fabrice Paida">
 
-    <!-- ABOUT -->
-    <section id="aboutPage" style="display:none;">
+            <p>
+                Hello! My name is <strong>Fabrice Paida</strong>. I am currently
+                pursuing a Bachelor's degree in Applied Computer Science with a
+                concentration in Networking and Security at Point Park University.
+                I specialize in networking, cybersecurity, Linux, cloud
+                technologies, and data center operations. This homepage
+                demonstrates the HTML, CSS, and jQuery techniques learned in
+                CMPS262 while showcasing some of my professional projects and
+                technical skills.
+            </p>
 
-        <h2>About Me</h2>
+        </section>
 
-        <p>
-            I am currently pursuing a Bachelor's degree in Applied Computer Science
-            with a concentration in Networking and Security at Point Park University.
-        </p>
+        <!-- ABOUT -->
 
-        <p>
-            I enjoy working with networking, Linux,
-            cloud technologies, and data centers.
-        </p>
+        <section id="aboutPage" style="display:none;">
 
-    </section>
+            <h2>About Me</h2>
 
-    <!-- PROJECTS -->
-    <section id="projectsPage" style="display:none;">
+            <p>
+                I am currently pursuing a Bachelor's degree in Applied Computer
+                Science with a concentration in Networking and Security at Point
+                Park University. I enjoy working with networking, Linux, cloud
+                technologies, cybersecurity, and data center operations.
+                I continue building my technical skills through hands-on
+                projects and professional experience.
+            </p>
 
-        <h2>Projects</h2>
+        </section>
 
-      <ul>
-    <li>Prime Tech Field Solutions LLC</li>
-    <li>DataBank SmartRack Passport</li>
-    <li>NdakoCare Platform</li>
-    <li>Africa Video Platform (Future Project)</li>
-</ul>
+        <!-- PROJECTS -->
 
-    </section>
+        <section id="projectsPage" style="display:none;">
 
-    <!-- SETTINGS -->
+            <h2>Projects</h2>
 
-<section id="settingsPage" style="display:none;">
+            <ul>
+                <li>Prime Tech Field Solutions LLC</li>
+                <li>DataBank SmartRack Passport</li>
+                <li>NdakoCare Platform</li>
+                <li>Africa Video Platform (Future Project)</li>
+            </ul>
 
-    <h2>Customize Your Homepage</h2>
+        </section>
 
-    <br>
+        <!-- SETTINGS -->
 
-    <label><strong>Choose Font:</strong></label>
+        <section id="settingsPage" style="display:none;">
 
-    <select id="fontSelect">
-        <option value="Arial">Arial</option>
-        <option value="Georgia">Georgia</option>
-        <option value="Verdana">Verdana</option>
-        <option value="'Trebuchet MS'">Trebuchet MS</option>
-    </select>
+            <h2>Customize Your Homepage</h2>
 
-    <br><br>
+            <p>
+                Personalize the appearance of the homepage using the options
+                below.
+            </p>
 
-    <label><strong>Choose Text Color:</strong></label>
+            <label for="fontSelect"><strong>Choose Font:</strong></label>
 
-    <select id="colorSelect">
-        <option value="#222">Black</option>
-        <option value="darkblue">Blue</option>
-        <option value="green">Green</option>
-        <option value="purple">Purple</option>
-    </select>
+            <select id="fontSelect">
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Verdana">Verdana</option>
+                <option value="'Trebuchet MS'">Trebuchet MS</option>
+            </select>
 
-    <br><br>
+            <br><br>
 
-    <button id="darkModeBtn">
-        Toggle Dark Mode
-    </button>
+            <label for="colorSelect"><strong>Choose Text Color:</strong></label>
 
-</section>
+            <select id="colorSelect">
+                <option value="#222">Black</option>
+                <option value="darkblue">Blue</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+            </select>
 
-</main>
-    <!-- Footer -->
+            <br><br>
+
+            <button id="darkModeBtn">
+                Toggle Dark Mode
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
+
         <p>
             © 2026 Fabrice Paida |
             CMPS262 Advanced Programming
         </p>
+
     </footer>
 
-    <!-- jQuery Library -->
+    <!-- jQuery -->
+
     <script src="jquery-3.3.1.min.js"></script>
 
     <!-- JavaScript -->
+
     <script src="script3.js"></script>
 
 </body>

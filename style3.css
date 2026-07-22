@@ -10,40 +10,48 @@
     box-sizing:border-box;
 }
 
+/* ===========================
+   Body
+=========================== */
+
 body{
 
     font-family:Arial, Helvetica, sans-serif;
     background:#f4f6f9;
     color:#333;
-    line-height:1.6;
+    line-height:1.7;
 
 }
 
-/* Header */
+/* ===========================
+   Header
+=========================== */
 
 header{
 
     background:#003366;
     color:white;
     text-align:center;
-    padding:35px;
+    padding:45px 20px;
 
 }
 
 header h1{
 
     font-size:60px;
+    margin-bottom:10px;
 
 }
 
 header p{
 
-    font-size:20px;
-    margin-top:10px;
+    font-size:22px;
 
 }
 
-/* Navigation */
+/* ===========================
+   Navigation
+=========================== */
 
 nav{
 
@@ -58,84 +66,130 @@ nav button{
     background:white;
     color:#003366;
     border:none;
-    padding:15px 28px;
-    margin:5px;
+    padding:15px 30px;
+    margin:6px;
     border-radius:8px;
     font-size:18px;
     cursor:pointer;
-    transition:.3s;
+    transition:0.3s;
 
 }
 
 nav button:hover{
 
     background:#ffd54f;
+    transform:scale(1.05);
 
 }
 
-/* Main */
+/* ===========================
+   Main Content
+=========================== */
 
 main{
 
     max-width:1000px;
     margin:auto;
+    padding:60px 30px;
     text-align:center;
-    padding:50px;
 
 }
 
 main h2{
 
-    font-size:28px;
-    margin-bottom:20px;
-
-}
-
-main p{
-
-    font-size:18px;
-    margin-bottom:20px;
+    font-size:32px;
+    margin-bottom:25px;
+    color:#222;
 
 }
 
 main img{
 
-    width:240px;
-    border-radius:15px;
+    width:250px;
+    border-radius:18px;
     margin:25px 0;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 
 }
 
-/* Projects */
+/* ===========================
+   Home & About Paragraphs
+=========================== */
+
+#homePage,
+#aboutPage{
+
+    text-align:center;
+
+}
+
+#homePage p,
+#aboutPage p{
+
+    max-width:850px;
+    margin:25px auto;
+    text-align:center;
+    font-size:22px;
+    line-height:1.9;
+
+}
+
+/* ===========================
+   Projects
+=========================== */
+
+#projectsPage{
+
+    text-align:center;
+
+}
 
 #projectsPage ul{
 
-    list-style-position:inside;
     display:inline-block;
     text-align:left;
     font-size:22px;
+    line-height:2;
+    margin-top:20px;
+    padding-left:25px;
 
 }
 
-/* Settings */
+/* ===========================
+   Settings
+=========================== */
+
+#settingsPage{
+
+    text-align:center;
+
+}
+
+#settingsPage label{
+
+    font-size:22px;
+    font-weight:bold;
+
+}
 
 #settingsPage select{
 
-    padding:8px;
-    font-size:16px;
-    margin:10px;
+    padding:10px;
+    font-size:18px;
+    margin:15px;
 
 }
 
 #settingsPage button{
 
-    padding:12px 20px;
-    font-size:16px;
+    padding:14px 28px;
+    font-size:18px;
     border:none;
+    border-radius:8px;
     background:#003366;
     color:white;
-    border-radius:6px;
     cursor:pointer;
+    transition:.3s;
 
 }
 
@@ -145,7 +199,9 @@ main img{
 
 }
 
-/* Footer */
+/* ===========================
+   Footer
+=========================== */
 
 footer{
 
@@ -153,11 +209,14 @@ footer{
     color:white;
     text-align:center;
     padding:25px;
-    margin-top:40px;
+    margin-top:50px;
+    font-size:18px;
 
 }
 
-/* Dark Mode */
+/* ===========================
+   Dark Mode
+=========================== */
 
 .darkMode{
 
@@ -188,7 +247,20 @@ footer{
 
     background:#333;
     color:white;
-    border-radius:10px;
-    padding:20px;
+    border-radius:12px;
+    padding:25px;
+
+}
+
+.darkMode button{
+
+    background:#444;
+    color:white;
+
+}
+
+.darkMode button:hover{
+
+    background:#666;
 
 }
